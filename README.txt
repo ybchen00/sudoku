@@ -1,16 +1,23 @@
-Can run by:
-	1. python sudoku.py    for solving boards in sudokus_start.txt
-	                       solutions can be found in sudokus_finish.txt
-	2. python sudoku.py inputString
-                For example: python sudoku.py 800000000003600000070090200050007000000045700000100030001000068008500010090000400
-		Solution will be printed on terminal and output as a string in output.txt
+## Sudoku Solver
 
-Results report:
+This program solves sudoku puzzles by regarding it as a Constraint Satisfaction Problem (CSP). The solver implements backtracking search using the minimum remaining value heuristic. Forward checking is also applied to reduce variables domains.
+
+
+Can run the solver by:
+	1. python sudoku.py    
+	
+		- For solving boards in sudokus_start.txt
+	        - Solutions can be found in sudokus_finish.txt
+		
+	2. python sudoku.py inputSudokuBoard
+                
+		- For example: python sudoku.py 800000000003600000070090200050007000000045700000100030001000068008500010090000400
+		- Solution will be printed on terminal and output as a string in output.txt
+
+
+Sample results report:
 
 Solved all 400 puzzles in sudokus_start.txt
-
-Also solved: World hardest sudoku included in the instructions (800000000003600000070090200050007000000045700000100030001000068008500010090000400)
-Solved time(seconds): 14.984375
 
 Runtimes are the following, reported in seconds:
 Board 1: 0.015625
