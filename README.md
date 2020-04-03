@@ -4,6 +4,7 @@ This program solves sudoku puzzles by regarding it as a Constraint Satisfaction 
 
 
 Can run the solver by:
+	
 	1. python sudoku.py    
 	
 		- For solving boards in sudokus_start.txt
